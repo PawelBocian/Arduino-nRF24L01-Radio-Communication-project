@@ -60,7 +60,7 @@ Here you can see how it really looks. I did test of `Set Frequency, Get Potentio
 As you can see at the screens below, everything works fine.
 
 
-![](Work_screen.png)
+![](images/Work_screen.png)
 
 
 Video of all functionality here [BocianooTech](https://www.youtube.com/channel/UClkl_F0n8ZwLmSB5RVzRORw)
