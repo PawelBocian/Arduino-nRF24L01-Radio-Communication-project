@@ -3,7 +3,7 @@
 * Introduction
 * Manual
 * Description
-* Connectiom scheme
+* Connection scheme
 * How it works ?
 * Example of work
 
@@ -51,10 +51,10 @@ To receive message we need to check if something is available. Use then **networ
 # Connection scheme
 
 Items :
-1 Arduino Pro Mini 
-2 Potentiometer (10 kΩ)
-3 Buzzer
-4 Voltage converter  5v->3.3V - [AVT03620](https://sklep.avt.pl/modul-stabilizatora-am1117-3-3v.html) 
+1. Arduino Pro Mini 
+2. Potentiometer (10 kΩ)
+3. Buzzer
+4. Voltage converter  5v->3.3V - [AVT03620](https://sklep.avt.pl/modul-stabilizatora-am1117-3-3v.html) 
 
 ## Scheme
 ![](images/Mini_diagram.png)
