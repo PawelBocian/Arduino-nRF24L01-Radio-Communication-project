@@ -3,6 +3,8 @@
 * Introduction
 * Manual
 * Description
+* Connectiom scheme
+* How it works ?
 * Example of work
 
 ## Introduction
@@ -46,6 +48,16 @@ At the beginning you must include dedicated libraries for Arduino RF `RF24` and 
 
 To send message NRF use network.write() method with 3 variables.Node who is sender,&message and third sizeof message. `network.write(sender,&message,sizeof(message))` 
 To receive message we need to check if something is available. Use then **network.available()** If so, NRF use **network.read()** method with 3 variables.Node who is recipient (recipient == UNO_NODE) ,&message and third sizeof message. `network.read(recipient,&message,sizeof(message))`.
+# Connectiom scheme
+
+Items :
+1.Arduino Pro Mini 
+2.Potentiometer (10 kΩ)
+3.Buzzer
+4.Voltage converter  5v->3.3V - [AVT03620](https://sklep.avt.pl/modul-stabilizatora-am1117-3-3v.html) 
+
+## Scheme
+![](images/Mini_diagram.png)
 
 # How it works ?  
 We have 2 devices `Arduino UNO` as a master and `Arduino Pro Mini` as a slave. Both of them use `Request` and `Response` class. It's our way to handle incoming and outgoing messages. Master device and Slave device use special method to handle radio communication. Firstly when user puts request, 3 variables are converted into one called `request_id`. Using this variable device knows what type of question it should send to slave. Then slave recived a message and parse id to request variable `Id`. Checking by Id, slave do some logical operations then pack required value into response variable `value` and send it to Master. Master knows what type of response recived by `Id`.Then it prints answer from Slave device in terminal window. 
