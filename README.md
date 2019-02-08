@@ -55,6 +55,7 @@ Items :
 2. Potentiometer (10 kΩ)
 3. Buzzer
 4. Voltage converter  5v->3.3V - [AVT03620](https://sklep.avt.pl/modul-stabilizatora-am1117-3-3v.html) 
+5. Converter [USB-RS232/UART](https://botland.com.pl/pl/konwertery-usb-uart-rs232-rs485/4502-konwerter-usb-uart-ftdi-ft232rl-wtyk-usb.html)
 
 ## Scheme
 ![](images/Mini_diagram.png)
