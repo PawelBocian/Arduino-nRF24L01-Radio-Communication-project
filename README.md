@@ -48,13 +48,13 @@ At the beginning you must include dedicated libraries for Arduino RF `RF24` and 
 
 To send message NRF use network.write() method with 3 variables.Node who is sender,&message and third sizeof message. `network.write(sender,&message,sizeof(message))` 
 To receive message we need to check if something is available. Use then **network.available()** If so, NRF use **network.read()** method with 3 variables.Node who is recipient (recipient == UNO_NODE) ,&message and third sizeof message. `network.read(recipient,&message,sizeof(message))`.
-# Connectiom scheme
+# Connection scheme
 
 Items :
-1.Arduino Pro Mini 
-2.Potentiometer (10 kΩ)
-3.Buzzer
-4.Voltage converter  5v->3.3V - [AVT03620](https://sklep.avt.pl/modul-stabilizatora-am1117-3-3v.html) 
+1 Arduino Pro Mini 
+2 Potentiometer (10 kΩ)
+3 Buzzer
+4 Voltage converter  5v->3.3V - [AVT03620](https://sklep.avt.pl/modul-stabilizatora-am1117-3-3v.html) 
 
 ## Scheme
 ![](images/Mini_diagram.png)
